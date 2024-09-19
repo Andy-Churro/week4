@@ -4,9 +4,22 @@
 ##########################Reviewing somethings
 
 # indexing strings -- slide 4
-my_text = 'this is a text'
+my_text = 'this is a text string '
 result = my_text  #get the index of the letter a
 print(result)
+print(result[0:4])
+print(result.find('text'))
+print(result[10:14])
+print(result.find('is'))
+print(result[5:7])
+# print(result[::1])
+print(result[-1])
+print(result.find('string'))
+print(result[15:-1])
+print(result.find('hancock'))
+print(result[-3])
+print(result[-5])
+
 
 #get the index of the third letter from the end of the text
 
@@ -15,15 +28,18 @@ print(result)
 ###slide 5
 # string[start:stop:step]
 #example
-# text = "Hello, World!"
-# print(text[7:12])  # prints "World"
+text = "Hello, World!"
+print(text[7:12])  # prints "World"
 text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 # Get the substring CDE and put in a variable
+substring=text.find("CDE")
+print(substring)
+substring=text[2:5]
 
 #get the first letter all the way to the 4th letter
-
+print(text[0::5])
 #get the first letter to the final letter and skip every 3rd letter
-
+print(text[0:])
 # Built-in methods:
 # Python has a variety of built-in methods to work with substrings.
 
