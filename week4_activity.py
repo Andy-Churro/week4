@@ -4,42 +4,42 @@
 ##########################Reviewing somethings
 
 # indexing strings -- slide 4
-my_text = 'this is a text string '
-result = my_text  #get the index of the letter a
-print(result)
-print(result[0:4])
-print(result.find('text'))
-print(result[10:14])
-print(result.find('is'))
-print(result[5:7])
-# print(result[::1])
-print(result[-1])
-print(result.find('string'))
-print(result[15:-1])
-print(result.find('hancock'))
-print(result[-3])
-print(result[-5])
+# my_text = 'this is a text string '
+# result = my_text  #get the index of the letter a
+# print(result)
+# print(result[0:4])
+# print(result.find('text'))
+# print(result[10:14])
+# print(result.find('is'))
+# print(result[5:7])
+# # print(result[::1])
+# print(result[-1])
+# print(result.find('string'))
+# print(result[15:-1])
+# print(result.find('hancock'))
+# print(result[-3])
+# print(result[-5])
 
 
-#get the index of the third letter from the end of the text
+# #get the index of the third letter from the end of the text
 
-# find the index of the letter s
+# # find the index of the letter s
 
-###slide 5
-# string[start:stop:step]
-#example
-text = "Hello, World!"
-print(text[7:12])  # prints "World"
-text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-# Get the substring CDE and put in a variable
-substring=text.find("CDE")
-print(substring)
-substring=text[2:5]
+# ###slide 5
+# # string[start:stop:step]
+# #example
+# text = "Hello, World!"
+# print(text[7:12])  # prints "World"
+# text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+# # Get the substring CDE and put in a variable
+# substring=text.find("CDE")
+# print(substring)
+# substring=text[2:5]
 
-#get the first letter all the way to the 4th letter
-print(text[0::5])
-#get the first letter to the final letter and skip every 3rd letter
-print(text[0:])
+# #get the first letter all the way to the 4th letter
+# print(text[0::5])
+# #get the first letter to the final letter and skip every 3rd letter
+# print(text[0:])
 # Built-in methods:
 # Python has a variety of built-in methods to work with substrings.
 
@@ -52,18 +52,25 @@ print(text[0:])
 #################################Extracting Sub-Strings###################################
 # Extracting Sub-Strings Practice #1
 # Extract the first word of the following sentence using slicing, and display it on the screen:
-# "Controlling complexity is the essence of programming"
+text="Controlling complexity is the essence of programming"
+print(text[0:12])
 # Hint: "Controlling" is 11 characters long.
 
 # Extracting Sub-Strings Practice #2
 # Take every third character starting from the ninth to the end of the sentence, and print the result.
-# "Never trust a computer you can't throw out a window"
-
+words="Never trust a computer you can't throw out a window"
+print(words[9::3])
 # Extracting Sub-Strings Practice #3
 # Reverses the position of all the characters in the following sentence and displays the result on the screen.
-# "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
-
+word="It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
+print(word[::-1])
 ##################################### String Methods#################################
+new_text="this is a new text text text text string"
+print(new_text.count("text"))
+print(new_text.endswith("string"))
+print(new_text.replace("text", "word"))
+
+
 # String Methods Practice #1
 #slieds 12 -16
 # Print the following text in uppercase, using the specific string method:
